@@ -38,3 +38,29 @@ Step 4: Additional Programs
 Git Version: 2.49.0
 VS Code Version: 1.103.2
 Jupyter Notebook: Installed via pip
+
+Step 5: Download Datasets and Models
+-------------------------------------
+WikiText Dataset: Downloaded successfully (18,014 samples)
+FB15k-237 Dataset: Downloaded successfully (train, validation, test splits)
+DistilBERT Model: Skipped (sympy compatibility issue)
+Phi-1.5 Model: Skipped (sympy compatibility issue)
+Cache Size: 115.70 GB
+Cache Location: C:\Users\data_/.cache/huggingface
+
+Step 6: Filesystem Setup
+------------------------
+Root Directory: C:\hkm_pipeline
+Subdirectories: data/, models/, scripts/, outputs/, notebooks/
+Virtual Environment: hkm_env/
+
+Step 7: GitHub Repository
+-------------------------
+Repository Initialized: Yes
+Initial Commit: Created
+Files Added: README.md, .gitignore, requirements.txt, prep_results.txt, scripts/
+Commit Hash: 36d4e3c
+
+Prep Phase Status: COMPLETE
+Total Time: ~30 minutes
+Ready for Phase 1: Build Knowledge Graph
