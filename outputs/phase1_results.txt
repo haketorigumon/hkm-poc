@@ -29,3 +29,30 @@ Largest component: 35 nodes (6.8% of graph)
 Output files:
 - phase1_graph.pkl: Successfully created
 - phase1_metadata.pkl: Successfully created
+
+Step 3: Graph Integrity Checks
+-------------------------------
+Test script: test_phase1.py created and executed
+Graph Statistics:
+- Total nodes: 517
+- Total edges: 400  
+- Average degree: 1.55
+- Connected components: 254
+- Largest component: 35 nodes (6.8%)
+- Isolated nodes: 141 (27.3%)
+
+Node Distribution:
+- WikiText nodes: 335
+- FB15k nodes: 182
+
+Edge Weight Statistics:
+- Mean: 0.778
+- Std: 0.160
+- Min: 0.509
+- Max: 1.000
+
+Connectivity Assessment:
+- [FAIL] Connectivity: 6.8% (target >80%)
+- [FAIL] Average degree: 1.55 (target >2-3)
+- Many isolated components indicate sparse connections
+- Visualization generated: phase1_graph.png
