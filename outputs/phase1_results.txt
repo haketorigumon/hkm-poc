@@ -15,3 +15,17 @@ Modifications from base template:
 - GPU acceleration enabled
 - Added progress tracking with tqdm
 - Saving metadata along with graph
+
+Step 2: Entanglement Process Execution  
+---------------------------------------
+Runtime: 8.23 seconds (GPU accelerated)
+WikiText samples processed: 335 (valid texts from 500 samples)
+FB15k entities integrated: 182
+Total nodes created: 517
+Total edges created: 400
+Average degree: 1.55
+Connected components: 254
+Largest component: 35 nodes (6.8% of graph)
+Output files:
+- phase1_graph.pkl: Successfully created
+- phase1_metadata.pkl: Successfully created

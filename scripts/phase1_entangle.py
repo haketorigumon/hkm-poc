@@ -107,10 +107,15 @@ node_offset = len(texts)
 fb15k_nodes = {}
 
 for i in tqdm(range(fb15k_sample_size), desc="   Adding FB15k entities"):
-    sample = fb15k_train[i]
-    head = sample['head']
-    tail = sample['tail']
-    relation = sample['relation']
+    sample = fb15k_train[i]['text']
+    # Parse the tab-separated format
+    parts = sample.split('\t')
+    if len(parts) >= 3:
+        head = parts[0]
+        relation = parts[1]
+        tail = parts[2]
+    else:
+        continue
     
     # Create nodes for entities if not exists
     if head not in fb15k_nodes:
@@ -145,7 +150,8 @@ print(f"   Largest component size: {len(largest_component)} ({len(largest_compon
 print("\n9. Saving entangled graph...")
 output_path = '../outputs/phase1_graph.pkl'
 os.makedirs('../outputs', exist_ok=True)
-nx.write_gpickle(G, output_path)
+with open(output_path, 'wb') as f:
+    pickle.dump(G, f)
 print(f"   Graph saved to: {output_path}")
 
 # Save metadata
