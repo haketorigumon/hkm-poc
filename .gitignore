@@ -37,10 +37,12 @@ desktop.ini
 *.log
 logs/
 
-# Output files
+# Output files (keep phase results)
 outputs/*.json
 outputs/*.csv
 outputs/*.txt
+!outputs/phase*_results.txt
+!outputs/phase*_report.md
 
 # Cache
 .cache/
