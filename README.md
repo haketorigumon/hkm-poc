@@ -73,6 +73,7 @@ python scripts/phase4_enhanced.py        # Chipping
 - [Full Technical Report](FINAL_REPORT.md)
 - [Phase Reports](outputs/)
 - [GitHub Repository](https://github.com/JustinArndtAI/hkm-poc)
+- [ArXiv](https://arxiv.org/html/2509.10518v1)
 
 ## License
 MIT
